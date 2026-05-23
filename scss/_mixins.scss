@@ -1,0 +1,11 @@
+@mixin boton-estilo {
+  background-color: $color-primario;
+  color: white;
+  padding: $espaciado;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: darken($color-primario, 10%);
+  }
+}
+

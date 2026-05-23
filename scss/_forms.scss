@@ -1,0 +1,48 @@
+// Estilos generales para formularios
+.form-contacto,
+.form-planificador,
+.form-cotizador {
+  display: flex;
+  flex-direction: column;
+  gap: $espaciado;
+
+  label {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+  }
+
+  input,
+  textarea {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: $font-base;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      border-color: $color-primario;
+      outline: none;
+    }
+  }
+
+  button {
+    @include boton-estilo; // Usa el mixin definido en _mixins.scss
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+}
+
+// Estilos específicos para el cotizador
+.form-cotizador {
+  input[type="number"] {
+    max-width: 200px;
+  }
+
+  .resultado {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: lighten($color-primario, 45%);
+    border-radius: 5px;
+  }
+}

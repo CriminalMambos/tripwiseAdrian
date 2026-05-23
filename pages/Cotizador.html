@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TripWise - Cotizador</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="planificador.html">Planificador</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="cotizador.html" class="active">Cotizador</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="cotizador">
+    <h1>Cotiza tu viaje</h1>
+    <form class="form-cotizador">
+      <label for="dias">Duración del viaje (días):</label>
+      <input type="number" id="dias" name="dias" min="1" required>
+
+      <label for="costo-dia">Costo estimado por día (USD):</label>
+      <input type="number" id="costo-dia" name="costo-dia" min="50" step="10" required>
+
+      <label for="personas">Número de personas:</label>
+      <input type="number" id="personas" name="personas" min="1" required>
+
+      <button type="submit">Calcular presupuesto</button>
+    </form>
+
+    <!-- Aquí podrías mostrar el resultado con JS -->
+    <section class="resultado">
+      <h2>Resultado</h2>
+      <p>El presupuesto estimado aparecerá aquí.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 TripWise - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
