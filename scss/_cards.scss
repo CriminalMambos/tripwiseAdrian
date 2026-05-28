@@ -1,65 +1,34 @@
-.card-img-top {
-  width: 100%;
-  height: 350px
-  object-fit: cover;
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
 }
-.card-img-top {
-  width: 100%;
-  height: 250px;   // podés subir a 300px si querés más alto
-  object-fit: cover; // recorta manteniendo proporción
-  display: block;    // asegura que no haya espacios raros
-}
+
 .card {
-  border: none;
-  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 280px;
+  text-align: center;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: fadeIn 1s ease forwards;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 
-  &:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  p {
+    padding: 0 1rem 1rem;
+    font-size: 0.9rem;
+    color: #555;
   }
 }
-
-// Animación de entrada
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@media (max-width: 1024px) {
-  .lista-destinos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .lista-destinos {
-    grid-template-columns: 1fr;
-  }
-}
-
-button {
-  transition: transform 0.3s ease;
-  &:hover {
-    transform: scale(1.05);
-  }
-}
-
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-}
-
-
-
