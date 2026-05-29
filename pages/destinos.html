@@ -1,24 +1,59 @@
-<section class="destinos">
-  <h2>Destinos destacados</h2>
-  <div class="cards-container">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora los mejores destinos turísticos con Tripwise.">
+    <meta name="author" content="Tripwise">
+    <title>Tripwise - Destinos</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>TripWise</h2>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="destinos.html" class="active">Destinos</a></li>
+                <li><a href="planificador.html">Planificador</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="cotizador.html">Cotizador</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="card">
-      <img src="../img/paris.jpg" alt="París">
-      <h3>París</h3>
-      <p>La ciudad de la luz, ideal para viajes románticos.</p>
-    </div>
+    <main class="container mt-5">
+        <h1 class="text-center mb-4">Catálogo de Destinos</h1>
+        <div class="cards-container">
+            <div class="card shadow-sm">
+                <img src="../img/paris.jpg" class="card-img-top" alt="Paris">
+                <div class="card-body">
+                    <h3 class="card-title">París</h3>
+                    <p class="card-text">La ciudad de la luz, ideal para viajes románticos.</p>
+                </div>
+            </div>
+            <div class="card shadow-sm">
+                <img src="../img/tokyo.jpg" class="card-img-top" alt="Tokio">
+                <div class="card-body">
+                    <h3 class="card-title">Tokio</h3>
+                    <p class="card-text">Una mezcla única de tradición y modernidad.</p>
+                </div>
+            </div>
+            <div class="card shadow-sm">
+                <img src="../img/nuevayork.jpg" class="card-img-top" alt="Nueva York">
+                <div class="card-body">
+                    <h3 class="card-title">Nueva York</h3>
+                    <p class="card-text">La ciudad que nunca duerme, llena de energía.</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <div class="card">
-      <img src="../img/tokyo.jpg" alt="Tokio">
-      <h3>Tokio</h3>
-      <p>Una mezcla única de tradición y modernidad.</p>
-    </div>
-
-    <div class="card">
-      <img src="../img/nuevayork.jpg" alt="Nueva York">
-      <h3>Nueva York</h3>
-      <p>La ciudad que nunca duerme, llena de energía.</p>
-    </div>
-
-  </div>
-</section>
+    <footer>
+        <p>© 2026 Tripwise Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

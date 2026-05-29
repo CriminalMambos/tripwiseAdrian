@@ -1,135 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="TripWise - Planificación de viajes inteligente">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TripWise</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet">
-
-
-  <!-- Estilos personalizados -->
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-    header nav {
-      background: linear-gradient(90deg, #007BFF, #00C6FF);
-      padding: 1rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: white;
-    }
-
-    header nav h2 {
-      margin: 0;
-      font-weight: 600;
-    }
-
-    header nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    header nav a:hover {
-      text-decoration: underline;
-    }
-
-    h1, h2 {
-      font-weight: 600;
-    }
-
-    .card {
-      border: none;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: transform 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
-
-    footer {
-      background: #007BFF;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
-
-  <meta name="description" content="TripWise - Tu app institucional de viajes para planificar destinos y cotizar presupuestos.">
-<meta name="keywords" content="viajes, destinos, planificación, turismo, cotizador, TripWise">
-<meta name="author" content="TripWise">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tripwise - Tu app institucional de viajes para planificar destinos y cotizar presupuestos.">
+    <meta name="keywords" content="viajes, destinos, planificación, turismo, cotizador, Tripwise">
+    <meta name="author" content="Tripwise">
+    <title>Tripwise - Inicio</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <nav>
+            <h2>TripWise</h2>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="pages/destinos.html">Destinos</a></li>
+                <li><a href="pages/planificador.html">Planificador</a></li>
+                <li><a href="pages/nosotros.html">Nosotros</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+                <li><a href="pages/cotizador.html">Cotizador</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-  <h2> TripWise</h2>
-  <nav>
-  <ul>
-    <li><a href="index.html" class="active">Inicio</a></li>
-    <li><a href="pages/destinos.html">Destinos</a></li>
-    <li><a href="pages/planificador.html">Planificador</a></li>
-    <li><a href="pages/nosotros.html">Nosotros</a></li>
-    <li><a href="pages/contacto.html">Contacto</a></li>
-    <li><a href="pages/cotizador.html">Cotizador</a></li>
-  </ul>
-</nav>
-
-</header>
-
-
-<main class="container mt-5">
-  <h1 class="text-center mb-4">Destinos destacados</h1>
-
-  <div class="row">
-    <div class="col-md-6">
-      <div class="card shadow-sm mb-4">
-        <img src="img/paris.jpg" class="card-img-top" alt="Vista panorámica de París con la Torre Eiffel">
-       
-
-        <div class="card-body">
-          <h5 class="card-title">París</h5>
-          <p class="card-text">La ciudad de la luz, ideal para viajes románticos.</p>
+    <main class="container mt-5">
+        <h1 class="text-center mb-4">Destinos destacados</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card shadow-sm mb-4">
+                    <img src="img/paris.jpg" class="card-img-top" alt="Vista panorámica de París con la Torre Eiffel">
+                    <div class="card-body">
+                        <h5 class="card-title">París</h5>
+                        <p class="card-text">La ciudad de la luz, ideal para viajes románticos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm mb-4">
+                    <img src="img/tokyo.jpg" class="card-img-top" alt="Tokio">
+                    <div class="card-body">
+                        <h5 class="card-title">Tokio</h5>
+                        <p class="card-text">Una mezcla de tradición y tecnología.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="card shadow-sm mb-4">
-        <img src="img/tokyo.jpg" class="card-img-top" alt="Tokio">
-        <div class="card-body">
-          <h5 class="card-title">Tokio</h5>
-          <p class="card-text">Una mezcla de tradición y tecnología.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</main>
+    </main>
 
-<footer>
-  <p>© 2026 TripWise - Todos los derechos reservados</p>
-</footer>
-
+    <footer>
+        <p>© 2026 Tripwise Todos los derechos reservados</p>
+    </footer>
 </body>
 </html>
-
-
-
-
-
-
