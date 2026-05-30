@@ -19,7 +19,7 @@ Sitio institucional de viajes con 5 páginas (index + 4 secundarias), estilos pe
 - `/img` (imágenes del sitio)
 
 ## 🌐 Demo
-Publicado en Vercel/Netlify: [URL del sitio](https://tu-url.vercel.app)
+Publicado en Vercel/Netlify: [https://tripwise-adrian.vercel.app/)
 
 ## 👤 Autor
 Adrián Olivera
