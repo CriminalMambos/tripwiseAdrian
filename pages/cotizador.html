@@ -28,15 +28,19 @@
         <h1 class="text-center mb-4">Cotiza tu viaje</h1>
         <form class="custom-form shadow-sm p-4">
             <label for="dias">Duración del viaje (días):</label>
-            <input type="number" id="dias" name="dias" min="1" required>
+            <input type="number" id="dias" name="dias" min="1" 
+                   aria-label="Campo para ingresar duración del viaje en días" required>
 
             <label for="costo-dia">Costo estimado por día (USD):</label>
-            <input type="number" id="costo-dia" name="costo-dia" min="50" step="10" required>
+            <input type="number" id="costo-dia" name="costo-dia" min="50" step="10" 
+                   aria-label="Campo para ingresar costo estimado por día en dólares" required>
 
             <label for="personas">Número de personas:</label>
-            <input type="number" id="personas" name="personas" min="1" required>
+            <input type="number" id="personas" name="personas" min="1" 
+                   aria-label="Campo para ingresar número de personas" required>
 
-            <button type="submit" class="btn-primary-custom mt-3">Calcular presupuesto</button>
+            <button type="submit" class="btn-primary-custom mt-3" 
+                    aria-label="Botón para calcular presupuesto">Calcular presupuesto</button>
         </form>
 
         <section class="resultado mt-5 text-center">

@@ -28,18 +28,23 @@
         <h1 class="text-center mb-4">Planifica tu viaje</h1>
         <form class="custom-form shadow-sm p-4">
             <label for="destino">Destino:</label>
-            <input type="text" id="destino" name="destino" placeholder="Ej: París" required>
-            
+            <input type="text" id="destino" name="destino" placeholder="Ej: París"
+                   aria-label="Campo para ingresar destino del viaje" required>
+
             <label for="fecha">Fecha de inicio:</label>
-            <input type="date" id="fecha" name="fecha" required>
-            
+            <input type="date" id="fecha" name="fecha"
+                   aria-label="Campo para seleccionar fecha de inicio" required>
+
             <label for="dias">Duración (días):</label>
-            <input type="number" id="dias" name="dias" min="1" required>
-            
+            <input type="number" id="dias" name="dias" min="1"
+                   aria-label="Campo para ingresar duración en días" required>
+
             <label for="presupuesto">Presupuesto estimado (USD):</label>
-            <input type="number" id="presupuesto" name="presupuesto" min="100" step="50" required>
-            
-            <button type="submit" class="btn-primary-custom mt-3">Generar itinerario</button>
+            <input type="number" id="presupuesto" name="presupuesto" min="100" step="50"
+                   aria-label="Campo para ingresar presupuesto estimado en dólares" required>
+
+            <button type="submit" class="btn-primary-custom mt-3"
+                    aria-label="Botón para generar itinerario">Generar itinerario</button>
         </form>
     </main>
 

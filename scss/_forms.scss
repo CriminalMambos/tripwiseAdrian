@@ -27,13 +27,12 @@
         }
     }
 
+    // Aquí ya usas el botón extendido
     .btn-primary-custom {
+        @extend %btn-base;
         background-color: $primary-color;
         color: white;
         border: none;
-        padding: 1rem;
-        border-radius: 5px;
-        font-weight: 600;
         cursor: pointer;
         @include hover-lift;
 
@@ -41,4 +40,11 @@
             background-color: darken($primary-color, 10%);
         }
     }
+}
+
+// Placeholder base para botones
+%btn-base {
+    padding: 1rem;
+    border-radius: 5px;
+    font-weight: 600;
 }
