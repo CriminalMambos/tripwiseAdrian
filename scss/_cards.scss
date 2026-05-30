@@ -1,3 +1,12 @@
+// 1. Definimos el molde base (Placeholder) con los estilos estructurales comunes
+%tarjeta-base {
+    border: none !important;
+    border-radius: 10px;
+    overflow: hidden;
+    @include hover-lift; // Mantenemos tu mixin de movimiento interactivo
+}
+
+// 2. Contenedor de las tarjetas en formato Grilla
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -5,11 +14,9 @@
     padding: 1rem;
 }
 
+// 3. Clase de la tarjeta que hereda del molde usando @extend
 .card {
-    border: none !important;
-    border-radius: 10px;
-    overflow: hidden;
-    @include hover-lift;
+    @extend %tarjeta-base; // <-- ¡Aquí aplicamos el requisito obligatorio!
     
     img {
         height: 200px;
